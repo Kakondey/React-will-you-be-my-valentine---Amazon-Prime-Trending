@@ -50,7 +50,12 @@ const App = (props) => {
           );
         })}
       </div>
-      <button className="restart" data-testid="button-restart" onClick={reset}>
+      <button
+        disabled={current === 0}
+        className="restart"
+        data-testid="button-restart"
+        onClick={reset}
+      >
         Restart
       </button>
       <button
